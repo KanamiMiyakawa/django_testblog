@@ -2,6 +2,7 @@ from django.urls import path
 
 from . import views
 
+app_name = 'pages'
 urlpatterns = [
-    path('', views.top, name='pages_top'),
+    path('', views.top, name='top'),
 ]

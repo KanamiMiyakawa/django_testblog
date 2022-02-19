@@ -19,10 +19,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{% url 'pages_top' %}">Top</a>
+              <a class="nav-link active" aria-current="page" href="{% url 'pages:top' %}">Top</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'posts_index' %}">投稿一覧</a>
+              <a class="nav-link" href="{% url 'posts:index' %}">投稿一覧</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -54,7 +54,7 @@
       <h3>最新の投稿</h3>
 
       {% for post in posts.all %}
-        <a href ="{% url 'posts_detail' post.id %}">{{ post.title }}</a>
+        <a href ="{% url 'posts:detail' post.id %}">{{ post.title }}</a>
         <br /><br />
         {{ post.pulished }}
         <br /><br />
