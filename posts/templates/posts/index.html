@@ -48,6 +48,9 @@
     </nav>
 
     <div class="container">
+      {% load static %}
+      <img src="{% static 'posts/sand-head.jpg' %}" class="img-fluid"/>
+      <br /><hr><br />
       <h3>最新の投稿</h3>
 
       {% for post in posts.all %}
