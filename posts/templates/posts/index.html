@@ -53,7 +53,7 @@
       <br /><hr><br />
       <h3>最新の投稿</h3>
 
-      {% for post in posts.all %}
+      {% for post in latest_post_list.all %}
         <a href ="{% url 'posts:detail' post.id %}">{{ post.title }}</a>
         <br /><br />
         {{ post.pulished }}
